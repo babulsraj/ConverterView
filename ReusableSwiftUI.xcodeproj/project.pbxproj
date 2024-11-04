@@ -8,12 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		C06857452AA8624400DFFF5B /* ReusableSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C06857442AA8624400DFFF5B /* ReusableSwiftUIApp.swift */; };
-		C06857472AA8624400DFFF5B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C06857462AA8624400DFFF5B /* ContentView.swift */; };
+		C06857472AA8624400DFFF5B /* CurrencyConverterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C06857462AA8624400DFFF5B /* CurrencyConverterView.swift */; };
 		C06857492AA8624500DFFF5B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C06857482AA8624500DFFF5B /* Assets.xcassets */; };
 		C068574C2AA8624500DFFF5B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C068574B2AA8624500DFFF5B /* Preview Assets.xcassets */; };
 		C06857562AA8624500DFFF5B /* ReusableSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C06857552AA8624500DFFF5B /* ReusableSwiftUITests.swift */; };
 		C06857602AA8624500DFFF5B /* ReusableSwiftUIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C068575F2AA8624500DFFF5B /* ReusableSwiftUIUITests.swift */; };
 		C06857622AA8624500DFFF5B /* ReusableSwiftUIUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C06857612AA8624500DFFF5B /* ReusableSwiftUIUITestsLaunchTests.swift */; };
+		C06857722AA8768200DFFF5B /* CurrencyConverterPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C06857712AA8768200DFFF5B /* CurrencyConverterPresenter.swift */; };
+		C06857762AA87C0100DFFF5B /* CommonFilesAndExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C06857752AA87C0100DFFF5B /* CommonFilesAndExtensions.swift */; };
+		C06857782AA87C8100DFFF5B /* ConverterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C06857772AA87C8100DFFF5B /* ConverterView.swift */; };
+		C068577A2AA8840000DFFF5B /* LengthConverterPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C06857792AA8840000DFFF5B /* LengthConverterPresenter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +40,7 @@
 /* Begin PBXFileReference section */
 		C06857412AA8624400DFFF5B /* ReusableSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReusableSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C06857442AA8624400DFFF5B /* ReusableSwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableSwiftUIApp.swift; sourceTree = "<group>"; };
-		C06857462AA8624400DFFF5B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		C06857462AA8624400DFFF5B /* CurrencyConverterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyConverterView.swift; sourceTree = "<group>"; };
 		C06857482AA8624500DFFF5B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C068574B2AA8624500DFFF5B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		C06857512AA8624500DFFF5B /* ReusableSwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReusableSwiftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +48,10 @@
 		C068575B2AA8624500DFFF5B /* ReusableSwiftUIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReusableSwiftUIUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C068575F2AA8624500DFFF5B /* ReusableSwiftUIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableSwiftUIUITests.swift; sourceTree = "<group>"; };
 		C06857612AA8624500DFFF5B /* ReusableSwiftUIUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableSwiftUIUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		C06857712AA8768200DFFF5B /* CurrencyConverterPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyConverterPresenter.swift; sourceTree = "<group>"; };
+		C06857752AA87C0100DFFF5B /* CommonFilesAndExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonFilesAndExtensions.swift; sourceTree = "<group>"; };
+		C06857772AA87C8100DFFF5B /* ConverterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConverterView.swift; sourceTree = "<group>"; };
+		C06857792AA8840000DFFF5B /* LengthConverterPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LengthConverterPresenter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,8 +102,10 @@
 		C06857432AA8624400DFFF5B /* ReusableSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				C06857742AA87BDC00DFFF5B /* CommonFiles */,
+				C06857732AA87BC500DFFF5B /* LengthConverter */,
+				C06857702AA8763700DFFF5B /* CurrencyConvertor */,
 				C06857442AA8624400DFFF5B /* ReusableSwiftUIApp.swift */,
-				C06857462AA8624400DFFF5B /* ContentView.swift */,
 				C06857482AA8624500DFFF5B /* Assets.xcassets */,
 				C068574A2AA8624500DFFF5B /* Preview Content */,
 			);
@@ -125,6 +135,48 @@
 				C06857612AA8624500DFFF5B /* ReusableSwiftUIUITestsLaunchTests.swift */,
 			);
 			path = ReusableSwiftUIUITests;
+			sourceTree = "<group>";
+		};
+		C068576E2AA8761000DFFF5B /* Logic */ = {
+			isa = PBXGroup;
+			children = (
+				C06857712AA8768200DFFF5B /* CurrencyConverterPresenter.swift */,
+			);
+			path = Logic;
+			sourceTree = "<group>";
+		};
+		C068576F2AA8761F00DFFF5B /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				C06857462AA8624400DFFF5B /* CurrencyConverterView.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		C06857702AA8763700DFFF5B /* CurrencyConvertor */ = {
+			isa = PBXGroup;
+			children = (
+				C068576E2AA8761000DFFF5B /* Logic */,
+				C068576F2AA8761F00DFFF5B /* UI */,
+			);
+			path = CurrencyConvertor;
+			sourceTree = "<group>";
+		};
+		C06857732AA87BC500DFFF5B /* LengthConverter */ = {
+			isa = PBXGroup;
+			children = (
+				C06857792AA8840000DFFF5B /* LengthConverterPresenter.swift */,
+			);
+			path = LengthConverter;
+			sourceTree = "<group>";
+		};
+		C06857742AA87BDC00DFFF5B /* CommonFiles */ = {
+			isa = PBXGroup;
+			children = (
+				C06857752AA87C0100DFFF5B /* CommonFilesAndExtensions.swift */,
+				C06857772AA87C8100DFFF5B /* ConverterView.swift */,
+			);
+			path = CommonFiles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,8 +309,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C06857472AA8624400DFFF5B /* ContentView.swift in Sources */,
+				C06857762AA87C0100DFFF5B /* CommonFilesAndExtensions.swift in Sources */,
+				C068577A2AA8840000DFFF5B /* LengthConverterPresenter.swift in Sources */,
+				C06857472AA8624400DFFF5B /* CurrencyConverterView.swift in Sources */,
 				C06857452AA8624400DFFF5B /* ReusableSwiftUIApp.swift in Sources */,
+				C06857782AA87C8100DFFF5B /* ConverterView.swift in Sources */,
+				C06857722AA8768200DFFF5B /* CurrencyConverterPresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
